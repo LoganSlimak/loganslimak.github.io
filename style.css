@@ -1,0 +1,30 @@
+/* Base colors */
+:root {
+  --bg-color: #222222;
+  --surface-color: #2b2b2b;
+  --primary-color: #a0a0a0;
+  --accent-color: #ff5588;
+  --text-color: #dddddd;
+  --muted-text: #999999;
+  --border-color: #444444;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #eeeeee;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
