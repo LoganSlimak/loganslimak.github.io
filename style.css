@@ -9,25 +9,22 @@
   --border-color: #444444;
 }
 
+summary::before { content: "Click to Expand"; }
+details[open] summary::before { content: "Click to Collapse"; }
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
-.page {
-  margin: 3%;
-  padding: 3%;
+.body{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
 }
-
-.container {
-  background-color: var(--surface-color);
-  padding: 20px;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-}
+.accordion.active .body { max-height: 300px; }
+.header { cursor: pointer; font-weight: bold; }
 
 h1, h2, h3 {
   color: #eeeeee;
