@@ -4,7 +4,7 @@
   --bg-content-color: #444444;
   --surface-color: #2b2b2b;
   --primary-color: #a0a0a0;
-  --accent-color: #ff5588;
+  --accent-color: #5588ff;
   --text-color: #dddddd;
   --muted-text: #999999;
   --border-color: #444444;
@@ -48,4 +48,26 @@ a:hover {
   width: 60%;
   background: var(--bg-content-color);
   min-height: 100vh;
+}
+
+.sidebar {
+  padding: .5em;
+  width: 160px;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+  background-color: #222252; 
+}
+
+.sidebar span {
+  padding: .5em .5em;
+}
+
+.sidebar a {
+  padding: 2em 2em;
+}
+
+.main-content {
+  margin: 160px;
+  padding: 2em;
 }
